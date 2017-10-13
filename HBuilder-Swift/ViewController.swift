@@ -26,7 +26,7 @@ class ViewController: UIViewController,PDRCoreDelegate {
         pCoreHandle?.persentViewController = self;
         pCoreHandle?.setContainerView(webView!);
         
-        let pWWWPath = Bundle.main.bundlePath + "/Pandora/apps/HelloH5/www";
+        let pWWWPath = Bundle.main.bundlePath + "/Pandora/apps/HBuilder-Swift/www";
         let argus = "runtime argument";
         pAppHandle = pCoreHandle?.appManager.openApp(atLocation: pWWWPath, withIndexPath: "index.html", withArgs: argus, with: nil);
         
